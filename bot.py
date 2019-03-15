@@ -98,87 +98,87 @@ async def on_message(message):
     if message.content.startswith('^say'):
       return
     else:
-      if message.server.id == '519451035836874763' and 'https://' in message.content:
+      if message.server.id == '555789933214826506' and 'https://' in message.content:
           await client.delete_message(message)
           await client.send_message(message.channel, f'Do not post link {message.author.name}')
 
-      if message.server.id == '519451035836874763' and ':http://' in message.content:
+      if message.server.id == '555789933214826506' and ':http://' in message.content:
           await client.delete_message(message)
           await client.send_message(message.channel, f'Do not post link {message.author.name}')
              
-      if 'Who is your creator <@519200090770898945>?' in message.content:
+      if 'Who is your creator <@555791213647626240>?' in message.content:
           msg = 'Nøøb Gamer#3762 is my creator'.format(message)
           msg2 = await client.send_message(message.channel, msg)
          
-      if 'hi <@519200090770898945>' in message.content:
+      if 'hi <@555791213647626240>' in message.content:
           msg = 'Hello {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
          
-      if 'bye <@519200090770898945>' in message.content:
+      if 'bye <@555791213647626240>' in message.content:
           msg = 'Bye {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
 
-      if 'good night <@519200090770898945>' in message.content:
+      if 'good night <@555791213647626240>' in message.content:
           msg = 'Good night {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
 
-      if 'Good night <@519200090770898945>' in message.content:
+      if 'Good night <@555791213647626240>' in message.content:
           msg = 'Giid night {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
 
-      if 'Good morning <@519200090770898945>' in message.content:
+      if 'Good morning <@555791213647626240>' in message.content:
           msg = 'Good Morning {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
 
-      if 'good morning <@519200090770898945>' in message.content:
+      if 'good morning <@555791213647626240>' in message.content:
           msg = 'Good Morning {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
          
-      if 'Good afternoon <@519200090770898945>' in message.content:
+      if 'Good afternoon <@555791213647626240>' in message.content:
           msg = 'Good afternoon {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
          
-      if 'good afternoon <@519200090770898945>' in message.content:
+      if 'good afternoon <@555791213647626240>' in message.content:
           msg = 'Good afternoon {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
          
-      if 'Bye <@519200090770898945>' in message.content:
+      if 'Bye <@555791213647626240>' in message.content:
           msg = 'Bye {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
                  
-      if 'hello <@519200090770898945>' in message.content:
+      if 'hello <@555791213647626240>' in message.content:
           msg = 'Hello {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
          
-      if 'Hi <@519200090770898945>' in message.content:
+      if 'Hi <@555791213647626240>' in message.content:
           msg = 'Hello {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
           
-      if 'Hello <@519200090770898945>' in message.content:
+      if 'Hello <@555791213647626240>' in message.content:
           msg = 'Hello {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
           
-      if 'how are you <@519200090770898945>?' in message.content:
+      if 'how are you <@555791213647626240>?' in message.content:
           msg = 'I am fine what about you? {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
          
-      if 'How are you <@519200090770898945>?' in message.content:
+      if 'How are you <@555791213647626240>?' in message.content:
           msg = 'I am fine what about you? {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
           
-      if 'sup <@519200090770898945>' in message.content:
+      if 'sup <@555791213647626240>' in message.content:
           msg = 'I am fine what about you? {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)
          
-      if 'Sup <@519200090770898945>' in message.content:
+      if 'Sup <@555791213647626240>' in message.content:
           msg = 'I am fine what about you? {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)         
           
-      if 'I am also fine <@519200090770898945>' in message.content:
+      if 'I am also fine <@555791213647626240>' in message.content:
           msg = 'Cool! {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)          
          
-      if 'i am also fine <@519200090770898945>' in message.content:
+      if 'i am also fine <@555791213647626240>' in message.content:
           msg = 'Cool! {}'.format(message.author.name)
           msg2 = await client.send_message(message.channel, msg)          
           
