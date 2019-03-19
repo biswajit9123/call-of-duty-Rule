@@ -31,7 +31,7 @@ async def on_message_edit(before, after):
       user = before.author
       member = after.author
       for channel in user.server.channels:
-        if channel.name == '╰☆☆-x10-log-☆☆╮':
+        if channel.name == '╰☆☆-cob-log-☆☆╮':
             r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
             embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
             embed.set_author(name='Message edited')
@@ -44,13 +44,13 @@ async def on_message_edit(before, after):
 @client.event
 async def on_message_delete(message):
     if not message.author.bot:
-      channelname = '╰☆☆-x10-log-☆☆╮'
+      channelname = '╰☆☆-cob-log-☆☆╮'
       logchannel=None
       for channel in message.server.channels:
         if channel.name == channelname:
           user = message.author
       for channel in user.server.channels:
-        if channel.name == '╰☆☆-x10-log-☆☆╮':
+        if channel.name == '╰☆☆-cob-log-☆☆╮':
           logchannel = channel
           r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
           embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -64,7 +64,7 @@ async def on_message_delete(message):
 @client.event
 async def on_reaction_add(reaction, user):
   for channel in user.server.channels:
-    if channel.name == '╰☆☆-x10-log-☆☆╮':
+    if channel.name == '╰☆☆-cob-log-☆☆╮':
         logchannel = channel
         r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
         embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -78,7 +78,7 @@ async def on_reaction_add(reaction, user):
 @client.event
 async def on_reaction_remove(reaction, user):
   for channel in user.server.channels:
-    if channel.name == '╰☆☆-x10-log-☆☆╮':
+    if channel.name == '╰☆☆-cob-log-☆☆╮':
         logchannel = channel
         r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
         embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -107,7 +107,7 @@ async def on_message(message):
           await client.send_message(message.channel, f'Do not post link {message.author.name}')
              
       if 'Who is your creator <@555791213647626240>?' in message.content:
-          msg = 'Nøøb Gamer#3762 is my creator'.format(message)
+          msg = 'BX10#3762 is my creator'.format(message)
           msg2 = await client.send_message(message.channel, msg)
          
       if 'hi <@555791213647626240>' in message.content:
