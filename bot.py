@@ -98,11 +98,11 @@ async def on_message(message):
     if message.content.startswith('^say'):
       return
     else:
-      if message.server.id == '555789933214826506' and 'https://' in message.content:
+      if message.server.id == '557572495922823179' and 'https://' in message.content:
           await client.delete_message(message)
           await client.send_message(message.channel, f'Do not post link {message.author.name}')
 
-      if message.server.id == '555789933214826506' and ':http://' in message.content:
+      if message.server.id == '557572495922823179' and ':http://' in message.content:
           await client.delete_message(message)
           await client.send_message(message.channel, f'Do not post link {message.author.name}')
              
