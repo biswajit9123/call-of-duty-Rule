@@ -8,7 +8,7 @@ import colorsys
 import random
 import json
  
-client = Bot(description="MyBot is best", command_prefix="!", pm_help = False)
+client = Bot(description="MyBot is best", command_prefix="c!", pm_help = False)
 client.remove_command('help')
 
 
