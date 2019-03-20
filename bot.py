@@ -95,7 +95,7 @@ async def on_message(message):
     user = message.author
     if message.author.bot:
       return
-    if message.content.startswith('^say'):
+    if message.content.startswith('c!say'):
       return
     else:
       if message.server.id == '557572495922823179' and 'https://' in message.content:
