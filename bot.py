@@ -31,7 +31,7 @@ async def on_message_edit(before, after):
       user = before.author
       member = after.author
       for channel in user.server.channels:
-        if channel.name == '╰☆☆-cob-log-☆☆╮':
+        if channel.name == '╰☆☆-cod-log-☆☆╮':
             r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
             embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
             embed.set_author(name='Message edited')
@@ -44,13 +44,13 @@ async def on_message_edit(before, after):
 @client.event
 async def on_message_delete(message):
     if not message.author.bot:
-      channelname = '╰☆☆-cob-log-☆☆╮'
+      channelname = '╰☆☆-cod-log-☆☆╮'
       logchannel=None
       for channel in message.server.channels:
         if channel.name == channelname:
           user = message.author
       for channel in user.server.channels:
-        if channel.name == '╰☆☆-cob-log-☆☆╮':
+        if channel.name == '╰☆☆-cod-log-☆☆╮':
           logchannel = channel
           r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
           embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -64,7 +64,7 @@ async def on_message_delete(message):
 @client.event
 async def on_reaction_add(reaction, user):
   for channel in user.server.channels:
-    if channel.name == '╰☆☆-cob-log-☆☆╮':
+    if channel.name == '╰☆☆-cod-log-☆☆╮':
         logchannel = channel
         r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
         embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -78,7 +78,7 @@ async def on_reaction_add(reaction, user):
 @client.event
 async def on_reaction_remove(reaction, user):
   for channel in user.server.channels:
-    if channel.name == '╰☆☆-cob-log-☆☆╮':
+    if channel.name == '╰☆☆-cod-log-☆☆╮':
         logchannel = channel
         r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
         embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -189,7 +189,7 @@ async def on_message(message):
           await asyncio.sleep(5)
           await client.delete_message(msg2)
           for channel in user.server.channels:
-            if channel.name == '╰☆☆-cob-log-☆☆╮':
+            if channel.name == '╰☆☆-cod-log-☆☆╮':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
                 embed.set_author(name='Warned user')
@@ -207,7 +207,7 @@ async def on_message(message):
           await asyncio.sleep(5)
           await client.delete_message(msg2)
           for channel in user.server.channels:
-            if channel.name == '╰☆☆-cob-log-☆☆╮':
+            if channel.name == '╰☆☆-cod-log-☆☆╮':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
                 embed.set_author(name='Warned user')
@@ -226,7 +226,7 @@ async def on_message(message):
           await asyncio.sleep(5)
           await client.delete_message(msg2)
           for channel in user.server.channels:
-            if channel.name == '╰☆☆-cob-log-☆☆╮':
+            if channel.name == '╰☆☆-cod-log-☆☆╮':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
                 embed.set_author(name='Warned user')
@@ -243,7 +243,7 @@ async def on_message(message):
           await asyncio.sleep(5)
           await client.delete_message(msg2)
           for channel in user.server.channels:
-            if channel.name == '╰☆☆-cob-log-☆☆╮':
+            if channel.name == '╰☆☆-cod-log-☆☆╮':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
                 embed.set_author(name='Warned user')
@@ -261,7 +261,7 @@ async def on_message(message):
           await asyncio.sleep(5)
           await client.delete_message(msg2)
           for channel in user.server.channels:
-            if channel.name == '╰☆☆-cob-log-☆☆╮':
+            if channel.name == '╰☆☆-cod-log-☆☆╮':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
                 embed.set_author(name='Warned user')
@@ -279,7 +279,7 @@ async def on_message(message):
           await asyncio.sleep(5)
           await client.delete_message(msg2)
           for channel in user.server.channels:
-            if channel.name == '╰☆☆-cob-log-☆☆╮':
+            if channel.name == '╰☆☆-cod-log-☆☆╮':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
                 embed.set_author(name='Warned user')
@@ -297,7 +297,7 @@ async def on_message(message):
           await asyncio.sleep(5)
           await client.delete_message(msg2)
           for channel in user.server.channels:
-            if channel.name == '╰☆☆-cob-log-☆☆╮':
+            if channel.name == '╰☆☆-cod-log-☆☆╮':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
                 embed.set_author(name='Warned user')
@@ -315,7 +315,7 @@ async def on_message(message):
           await asyncio.sleep(5)
           await client.delete_message(msg2)
           for channel in user.server.channels:
-            if channel.name == '╰☆☆-cob-log-☆☆╮':
+            if channel.name == '╰☆☆-cod-log-☆☆╮':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
                 embed.set_author(name='Warned user')
@@ -333,7 +333,7 @@ async def on_message(message):
           await asyncio.sleep(5)
           await client.delete_message(msg2)
           for channel in user.server.channels:
-            if channel.name == '╰☆☆-cob-log-☆☆╮':
+            if channel.name == '╰☆☆-cod-log-☆☆╮':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
                 embed.set_author(name='Warned user')
@@ -351,7 +351,7 @@ async def on_message(message):
           await asyncio.sleep(5)
           await client.delete_message(msg2)
           for channel in user.server.channels:
-            if channel.name == '╰☆☆-cob-log-☆☆╮':
+            if channel.name == '╰☆☆-cod-log-☆☆╮':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
                 embed.set_author(name='Warned user')
@@ -369,7 +369,7 @@ async def on_message(message):
           await asyncio.sleep(5)
           await client.delete_message(msg2)
           for channel in user.server.channels:
-            if channel.name == '╰☆☆-cob-log-☆☆╮':
+            if channel.name == '╰☆☆-cod-log-☆☆╮':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
                 embed.set_author(name='Warned user')
@@ -387,7 +387,7 @@ async def on_message(message):
           await asyncio.sleep(5)
           await client.delete_message(msg2)
           for channel in user.server.channels:
-            if channel.name == '╰☆☆-cob-log-☆☆╮':
+            if channel.name == '╰☆☆-cod-log-☆☆╮':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
                 embed.set_author(name='Warned user')
@@ -405,7 +405,7 @@ async def on_message(message):
           await asyncio.sleep(5)
           await client.delete_message(msg2)
           for channel in user.server.channels:
-            if channel.name == '╰☆☆-cob-log-☆☆╮':
+            if channel.name == '╰☆☆-cod-log-☆☆╮':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
                 embed.set_author(name='Warned user')
